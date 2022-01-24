@@ -13,6 +13,7 @@ public class 별찍기 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 
+		
 		int k = 1;
 		while (Math.pow(3, k) != N) {
 			k++;
