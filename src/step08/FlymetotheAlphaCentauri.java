@@ -14,7 +14,6 @@ public class FlymetotheAlphaCentauri {
 		
 		int T = Integer.parseInt(br.readLine());
 		
-		
 		for(int test=0;test<T;test++) {
 			
 			String[] input = (br.readLine()).split(" ");
