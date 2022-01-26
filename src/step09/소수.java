@@ -13,7 +13,7 @@ public class 소수 {
 		
 		int min = N;
 		int sum = 0;
-		
+		boolean minCheck = true;
 		for(int i=M;i<=N;i++) {
 			int j=2;
 			while(j<i) {
@@ -22,10 +22,20 @@ public class 소수 {
 				}
 				j++;
 			}
-//			if()
+			if(j==i) {
+				sum+=i;
+				if(minCheck)
+					min = i;
+				minCheck = false;
+			}
 			
 		}
-
+		
+		if(sum==0) {
+			System.out.println(-1);
+		}else {
+			System.out.println(sum+"\n"+min);
+		}
 	}
 
 }
