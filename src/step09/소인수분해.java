@@ -11,9 +11,6 @@ public class 소인수분해 {
 		Scanner sc = new Scanner(System.in);
 
 		int N = sc.nextInt();
-
-		if(N==1)
-			sb.append(1);
 		
 		int i = 2;
 		while (N > 1) {
