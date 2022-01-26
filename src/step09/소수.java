@@ -22,7 +22,7 @@ public class 소수 {
 				}
 				j++;
 			}
-			if()
+//			if()
 			
 		}
 
