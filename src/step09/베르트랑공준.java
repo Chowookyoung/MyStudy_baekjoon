@@ -14,9 +14,8 @@ public class 베르트랑공준 {
 		
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 		
-		int n = -1;
 		while(true) {
-			n = Integer.parseInt(bf.readLine());
+			int n = Integer.parseInt(bf.readLine());
 			if(n==0)
 				break;
 			int count = 0;
@@ -34,10 +33,7 @@ public class 베르트랑공준 {
 				
 			}
 			sb.append(count+"\n");
-			
 		}
-		
 		System.out.println(sb);
-		
 	}
 }
