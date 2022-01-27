@@ -18,6 +18,7 @@ public class 골드바흐의추측 {
 			int n2 = n/2;
 			int j=0;
 			while(j<n/2) {
+				
 				int k=2;
 				while(k<n2-j) {
 					if((n2-j)%k==0) {
@@ -25,6 +26,7 @@ public class 골드바흐의추측 {
 					}
 					k++;
 				}
+				
 				int l=2;
 				while(l<n2+j) {
 					if((n2+j)%l==0) {
@@ -40,11 +42,7 @@ public class 골드바흐의추측 {
 				
 				j++;
 			}
-			
 		}
-		
 		System.out.println(sb);
-		
 	}
-
 }
