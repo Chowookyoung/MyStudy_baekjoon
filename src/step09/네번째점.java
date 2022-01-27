@@ -14,20 +14,35 @@ public class 네번째점 {
 		ArrayList<String> x = new ArrayList<>();
 		ArrayList<String> y = new ArrayList<>();
 		
-		for(int i=0;i<3;i++) {
+		String[] input = (br.readLine()).split(" ");
+		x.add(input[0]);
+		y.add(input[1]);
+		
+		for(int i=0;i<2;i++) {
 			
-			String[] input = (br.readLine()).split(" ");
-			x.add(input[0]);
-			y.add(input[1]);
+			boolean x_check = true;
+			boolean y_check = true;
 			
+			input = (br.readLine()).split(" ");
+			
+			for(int j=0;j<x.size();j++) {
+				if(x.get(j).equals(input[0])) {
+					x.remove(j);
+					x_check = false;
+				}
+			}
+			for(int j=0;j<y.size();j++) {
+				if(y.get(j).equals(input[1])) {
+					y.remove(j);
+					y_check = false;
+				}
+			}
+			
+			if(x_check)
+				x.add(input[0]);
+			if(y_check)
+				y.add(input[1]);
 		}
-		
-		String X = x.stream().distinct().toString();
-		String Y = y.stream().distinct().toString();
-		
-		System.out.println(X+" "+Y);
-		
-
+		System.out.println(x.get(0)+" "+y.get(0));
 	}
-
 }
