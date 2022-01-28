@@ -13,13 +13,11 @@ public class 분수찾기 {
 		int X = 1;//해당 층의 첫번째 분수의 순번
 		int a = 1;//층수
 		
+		int sum=0;
 		while(true) {
-			int sum=0;
-			for(int i =1;i<a;i++) {
-				sum+=i;
-			}
 			X = 1+sum;
 			if(N<=X+(a-1)) break;
+			sum+=a;
 			a++;
 		}
 		
