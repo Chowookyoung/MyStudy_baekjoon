@@ -10,8 +10,8 @@ public class 분수찾기 {
 
 		int N = sc.nextInt();
 		
-		int X = 1;
-		int a = 1;
+		int X = 1;//해당 층의 첫번째 분수의 순번
+		int a = 1;//층수
 		
 		while(true) {
 			int sum=0;
