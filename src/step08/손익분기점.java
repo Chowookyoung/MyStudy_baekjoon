@@ -13,12 +13,8 @@ public class 손익분기점 {
 		int C = sc.nextInt();
 		
 		int point = -1;
-		if(C>B) {
-			point=(int)(A/(C-B))+1;
-		}
+		if(C>B) point=(int)(A/(C-B))+1;
 		
 		System.out.println(point);
-		
 	}
-
 }

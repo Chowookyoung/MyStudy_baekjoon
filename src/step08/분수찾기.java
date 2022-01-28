@@ -8,9 +8,9 @@ public class 분수찾기 {
 		
 		Scanner sc = new Scanner(System.in);
 
-		int X = sc.nextInt();
+		int N = sc.nextInt();
 		
-		int N = 1;
+		int X = 1;
 		int a = 1;
 		
 		while(true) {
@@ -18,15 +18,15 @@ public class 분수찾기 {
 			for(int i =1;i<a;i++) {
 				sum+=i;
 			}
-			N = 1+sum;
-			if(X<=N+(a-1)) break;
+			X = 1+sum;
+			if(N<=X+(a-1)) break;
 			a++;
 		}
 		
 		if(a%2==0) {
-			System.out.println((1+X-N)+"/"+(a-X+N));
+			System.out.println((1+N-X)+"/"+(a-N+X));
 		}else {
-			System.out.println((a-X+N)+"/"+(1+X-N));
+			System.out.println((a-N+X)+"/"+(1+N-X));
 		}
 	}
 }
