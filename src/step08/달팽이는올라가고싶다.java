@@ -17,6 +17,7 @@ public class 달팽이는올라가고싶다 {
 		int B = Integer.parseInt(input[1]);
 		int V = Integer.parseInt(input[2]);
 		
+		
 		int sum = (int)((V-A)/(A-B));
 		if((V-A)%(A-B)!=0) {
 			sum+=2;

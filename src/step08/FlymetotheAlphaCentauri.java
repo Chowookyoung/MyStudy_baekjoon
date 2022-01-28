@@ -44,7 +44,6 @@ public class FlymetotheAlphaCentauri {
 			}
 			sb.append(answer+"\n");
 		}
-		
 		System.out.println(sb);
 	}
 }

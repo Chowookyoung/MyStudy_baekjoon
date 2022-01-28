@@ -31,11 +31,8 @@ public class 부녀회장이될테야 {
 					}
 				}
 			}
-			
 			sb.append(room[k][n-1]+"\n");
 		}
 		System.out.println(sb);
-		
 	}
-
 }
