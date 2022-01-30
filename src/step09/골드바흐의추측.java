@@ -19,6 +19,7 @@ public class 골드바흐의추측 {
 			int j=0;
 			while(j<n/2) {
 				
+				//n2-j과 n2+j이 소수인지.
 				int k=2;
 				while(k<n2-j) {
 					if((n2-j)%k==0) {
@@ -35,7 +36,8 @@ public class 골드바흐의추측 {
 					l++;
 				}
 				
-				if(k==n2-j&&l==n2+j) {
+				//만약 k+l이 n인 경우에
+				if(k+l==n) {
 					sb.append((n2-j)+" "+(n2+j)+"\n");
 					break;
 				}

@@ -29,7 +29,6 @@ public class 소수 {
 					minCheck = false;
 				}
 			}
-			
 		}
 		
 		if(sum==0) {
@@ -38,5 +37,4 @@ public class 소수 {
 			System.out.println(sum+"\n"+min);
 		}
 	}
-
 }
