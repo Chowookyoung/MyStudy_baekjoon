@@ -19,14 +19,14 @@ public class 터렛 {
 			String[] input = br.readLine().split(" ");
 			
 			int x1 = Integer.parseInt(input[0]);
-			int x2 = Integer.parseInt(input[1]);
+			int y1 = Integer.parseInt(input[1]);
 			int r1 = Integer.parseInt(input[2]);
 			
-			int y1 = Integer.parseInt(input[3]);
+			int x2 = Integer.parseInt(input[3]);
 			int y2 = Integer.parseInt(input[4]);
 			int r2 = Integer.parseInt(input[5]);
 			
-			double distance = (double) Math.sqrt(Math.pow(Math.abs(x1-y1), 2) + Math.pow(Math.abs(x2-y2), 2));
+			double distance = (double) Math.sqrt(Math.pow(Math.abs(x1-x2), 2) + Math.pow(Math.abs(y1-y2), 2));
 			int max = Math.max(r1, r2);
 			int min = Math.min(r1, r2);
 			
