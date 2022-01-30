@@ -11,7 +11,7 @@ public class 소수 {
 		int M = sc.nextInt();
 		int N = sc.nextInt();
 		
-		int min = N;
+		int min = 0;
 		int sum = 0;
 		boolean minCheck = true;
 		for(int i=M;i<=N;i++) {
@@ -24,9 +24,10 @@ public class 소수 {
 			}
 			if(j==i) {
 				sum+=i;
-				if(minCheck)
+				if(minCheck) {
 					min = i;
-				minCheck = false;
+					minCheck = false;
+				}
 			}
 			
 		}
