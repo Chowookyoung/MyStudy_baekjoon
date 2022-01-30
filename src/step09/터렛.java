@@ -44,7 +44,7 @@ public class 터렛 {
 				}else {
 					sb.append("2\n");
 				}
-			}else if(distance<max||distance==max) {
+			}else if(distance<=max) {
 				if(distance+min==max) {
 					sb.append("1\n");
 				}else if(distance+min<max) {
