@@ -30,6 +30,7 @@ public class 터렛 {
 			int max = Math.max(r1, r2);
 			int min = Math.min(r1, r2);
 			
+			
 			if(distance==0) {
 				if(r1!=r2) {
 					sb.append("0\n");
