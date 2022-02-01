@@ -30,30 +30,44 @@ public class 터렛 {
 			int max = Math.max(r1, r2);
 			int min = Math.min(r1, r2);
 			
-			
 			if(distance==0) {
 				if(r1!=r2) {
 					sb.append("0\n");
 				}else {
 					sb.append("-1\n");
 				}
-			}else if(distance>max) {
-				if(r1+r2<distance) {
-					sb.append("0\n");
-				}else if(r1+r2==distance) {
-					sb.append("1\n");
-				}else {
-					sb.append("2\n");
-				}
-			}else if(distance<=max) {
-				if(distance+min==max) {
-					sb.append("1\n");
-				}else if(distance+min<max) {
-					sb.append("0\n");
-				}else if(distance+min>max) {
-					sb.append("2\n");
-				}
+			}else if(max+min<distance||distance<max-min) {
+				sb.append("0\n");
+			}else if(max-min==distance||max+min==distance) {
+				sb.append("1\n");
+			}else {
+				sb.append("2\n");
 			}
+			
+			
+//			if(distance==0) {
+//				if(r1!=r2) {
+//					sb.append("0\n");
+//				}else {
+//					sb.append("-1\n");
+//				}
+//			}else if(distance>max) {
+//				if(r1+r2<distance) {
+//					sb.append("0\n");
+//				}else if(r1+r2==distance) {
+//					sb.append("1\n");
+//				}else {
+//					sb.append("2\n");
+//				}
+//			}else if(distance<=max) {
+//				if(distance+min==max) {
+//					sb.append("1\n");
+//				}else if(distance+min<max) {
+//					sb.append("0\n");
+//				}else if(distance+min>max) {
+//					sb.append("2\n");
+//				}
+//			}
 		}
 		System.out.println(sb);
 	}
